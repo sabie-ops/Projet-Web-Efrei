@@ -1,0 +1,20 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 40px;
+}
+a{
+    background-color: rgb(48, 94, 122);
+    color: white;
+}
