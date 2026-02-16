@@ -1,3 +1,15 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: linear-gradient(
+    to bottom,
+    #1e90ff 0%,
+    #1e90ff 30%,
+    #000000 70%,
+    #000000 100%
+  );
+}
 .logo {
   width: 100px;
   height: 100px;
@@ -15,7 +27,6 @@ nav {
   gap: 40px;
 }
 a{
-    background-color: rgb(48, 94, 122);
     color: white;
 }
 .img-contact{
@@ -28,7 +39,39 @@ a{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  
 }
-/* .contact-grid div {
-  text-align: center;
-} */
+.main-content {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  color: white;
+}
+
+.contact {
+  flex: 2;
+}
+
+.apropos {
+  flex: 1;
+  padding-left: 40px;
+  border-left: 2px solid #ccc;
+  color: white;
+}
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .apropos {
+    border-left: none;
+    border-top: 2px solid #ccc;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+.contact-grid div{
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+}
