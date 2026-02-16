@@ -18,3 +18,17 @@ a{
     background-color: rgb(48, 94, 122);
     color: white;
 }
+.img-contact{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+/* .contact-grid div {
+  text-align: center;
+} */
