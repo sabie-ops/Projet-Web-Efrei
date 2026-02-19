@@ -50,11 +50,76 @@ nav a:hover {
     background-color: #0056b3; /* Bleu plus foncé quand on passe la souris */
 }
 .image {
-    width: 750px;        
-    height: 350px;
+    width: 1400px;        
+    height: 450px;
       border-radius: 15px;
     
-    
+}
+/* --- Structure de la Hero Section --- */
+.hero-efrei {
+  position: relative;
+  height: 80vh; /* Occupe 80% de la hauteur de l'écran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #050a18; /* Bleu foncé typique Efrei */
+}
 
+/* --- Superposition de texte --- */
+.hero-content {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
 
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #007bff; /* Bleu Efrei */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* --- Le Bandeau Défilant --- */
+.defilement-container {
+  width: 100%;
+  opacity: 0.5; /* Rend les images plus sombres pour faire ressortir le texte */
+}
+
+.defilement-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite; /* 30s pour un défilement doux */
+}
+
+.defilement-wrapper img {
+  height: 80vh; /* Même hauteur que la section hero */
+  width: auto;
+  object-fit: cover;
+  padding-right: 10px; /* Petit espace entre les photos */
+}
+
+/* L'Animation */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
