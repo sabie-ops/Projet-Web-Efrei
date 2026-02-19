@@ -1,0 +1,60 @@
+/* 1. Le fond dégradé sur toute la page */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, hsl(214, 27%, 65%), #03061a); /* Dégradé bleu clair vers bleu roi */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* 2. Le Header : il gère l'espacement entre logo et menu */
+header {
+    display: flex;
+    justify-content: space-between; /* Pousse le logo à gauche et le nav à droite */
+    align-items: center;            /* Aligne verticalement au milieu */
+    padding: 20px 40px;             /* Marge interne pour ne pas coller aux bords */
+}
+
+/* 3. Le Logo : on le force en cercle */
+.logo {
+    width: 100px;         /* Taille du logo */
+    height: 100px;
+    border-radius: 50%;   /* Rend l'image parfaitement ronde */
+    object-fit: cover;    /* Évite de déformer l'image */
+    background-color:#fff; /* Couleur de secours (lavande) */
+    margin-left: 10px;
+   
+}
+
+/* 4. Le menu de navigation */
+nav {
+    display: flex;
+    gap: 15px;            /* Espace entre chaque bouton */
+}
+
+/* 5. Le style des liens pour qu'ils ressemblent à des boutons */
+nav a {
+    background-color: #007bff; /* Le bleu vif des boutons */
+    color: white;              /* Texte en blanc */
+    text-decoration: none;     /* Enlève le soulignement */
+    padding: 12px 20px;        /* Taille interne du bouton */
+    border-radius: 8px;        /* Coins arrondis */
+    font-weight: bold;         /* Texte en gras */
+    text-transform: uppercase; /* Force les majuscules */
+    font-size: 14px;
+    transition: background0.3s ease; /* Animation fluide au survol */
+}
+
+/* 6. Effet au survol des boutons */
+nav a:hover {
+    background-color: #0056b3; /* Bleu plus foncé quand on passe la souris */
+}
+.image {
+    width: 750px;        
+    height: 350px;
+      border-radius: 15px;
+    
+    
+
+
+}
