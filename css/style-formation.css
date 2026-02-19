@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: linear-gradient(
+    to bottom,
+    #1e90ff 0%,
+    #1e90ff 30%,
+    #000000 70%,
+    #000000 100%
+  );
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 40px;
+}
+a{
+    color: white;
+}
