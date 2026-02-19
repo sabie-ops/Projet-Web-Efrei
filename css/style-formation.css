@@ -1,4 +1,4 @@
-body {
+/* body {
   min-height: 100vh;
   margin: 0;
 
@@ -9,7 +9,15 @@ body {
     #000000 70%,
     #000000 100%
   );
+} */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, hsl(214, 27%, 65%), #03061a); /* Dégradé bleu clair vers bleu roi */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
+
 .logo {
   width: 100px;
   height: 100px;
