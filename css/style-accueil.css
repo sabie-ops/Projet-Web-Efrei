@@ -50,8 +50,8 @@ nav a:hover {
     background-color: #0056b3; /* Bleu plus foncé quand on passe la souris */
 }
 .image {
-    width: 1400px;        
-    height: 450px;
+    width: 1000px;        
+    height: 500px;
       border-radius: 15px;
     
 }
@@ -122,4 +122,9 @@ nav a:hover {
 @keyframes scroll-left {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+footer{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
 }
