@@ -103,6 +103,21 @@ footer{
 }
 
 
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 280px; /* smaller size */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75); /* transparent white */
+    backdrop-filter: blur(8px); /* optional glass effect */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
 .contact-form {
     width: 100%;
     max-width: 400px;
@@ -130,4 +145,20 @@ footer{
 .contact-form textarea:focus {
     border-color: #2c3e50;
     outline: none;
+}
+/* Button styling */
+
+.contact-form button {
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #4ca1af;
 }
