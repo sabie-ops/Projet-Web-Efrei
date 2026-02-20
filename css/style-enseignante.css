@@ -9,31 +9,32 @@ body {
 
 
 
-.contact {
+/* Section Principale */
+.corps-enseignant {
   padding: 60px 20px;
- 
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.contact h2 {
+.corps-enseignant h2 {
   color: #050a18; /* Bleu foncé Efrei */
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* Grille de présentation */
+/* Grille de présentation des professeurs */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-/* Cartes individuelles */
-.contact-grid > div {
+/* Cartes individuelles (Profils) */
+.profile-card {
   background: white;
   padding: 25px;
   border-radius: 15px;
@@ -41,43 +42,105 @@ body {
   transition: transform 0.3s ease;
 }
 
-.contact-grid > div:hover {
+.profile-card:hover {
   transform: translateY(-5px);
 }
 
-/* --- Transformation des images en RONDS --- */
-.contact-grid img {
+/* Transformation des images en RONDS */
+.img-prof {
   width: 150px;
   height: 150px;
-  object-fit: cover; /* Important pour ne pas déformer l'image */
-  border-radius: 50%; /* Crée le rond */
-  border: 4px solid #007bff; /* Bordure bleue style Efrei */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #007bff;
   margin-bottom: 15px;
 }
 
-/* Styles du texte */
-.contact-grid p {
-  margin: 8px 0;
-  font-size: 0.95rem;
-  color: #333;
+/* Typographie des cartes */
+.profile-card h3 {
+  margin: 10px 0 5px;
+  color: #050a18;
+  font-size: 1.2rem;
 }
 
-/* Mise en avant du rôle (premier paragraphe) */
-.contact-grid p:first-of-type {
+.role {
   font-weight: bold;
   color: #007bff;
   text-transform: uppercase;
   font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
-/* Lien e-mail */
-.contact-grid a {
+.bio {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.contact-info a {
   color: #007bff;
   text-decoration: none;
 }
 
-.contact-grid a:hover {
+.contact-info a:hover {
   text-decoration: underline;
+}
+
+/* --- Nouvelles sections : Expertise et Recherche --- */
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 40px 0;
+}
+
+.expertise-section, .research-section {
+  text-align: left; /* Plus lisible pour du contenu textuel */
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.expertise-section h3, .research-section h3 {
+  color: #050a18;
+  margin-bottom: 20px;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+}
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.expertise-list li {
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.project-item {
+  margin-bottom: 15px;
+}
+
+.project-item h4 {
+  color: #007bff;
+  margin-bottom: 5px;
 }
 header {
     display: flex;
