@@ -12,23 +12,26 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-header{
+header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Pousse le logo à gauche et le nav à droite */
+    align-items: center;            /* Aligne verticalement au milieu */
+    padding: 20px 40px;             /* Marge interne pour ne pas coller aux bords */
 }
 nav {
-  margin-left: auto;
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 15px;            /* Espace entre chaque bouton */
 }
-.a{
-   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+nav a {
+    background-color: #007bff; /* Le bleu vif des boutons */
+    color: white;              /* Texte en blanc */
+    text-decoration: none;     /* Enlève le soulignement */
+    padding: 12px 20px;        /* Taille interne du bouton */
+    border-radius: 8px;        /* Coins arrondis */
+    font-weight: bold;         /* Texte en gras */
+    text-transform: uppercase; /* Force les majuscules */
+    font-size: 14px;
+    transition: background0.3s ease; /* Animation fluide au survol */
 }
 .a:hover {
   background-color: #0056b3;
@@ -83,10 +86,48 @@ nav {
   border-radius: 15px;
   padding: 10px;
 }
-.logo-1 {
+/* .logo-1 {
   padding-top: 40px;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+} */
+.txt{
+  font-size: small;
+}
+footer{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+}
+
+
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form inputs */
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Attribute selector example */
+.contact-form input[type="email"] {
+    border-color: #4ca1af;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2c3e50;
+    outline: none;
 }

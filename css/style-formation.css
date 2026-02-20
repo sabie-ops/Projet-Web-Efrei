@@ -24,23 +24,26 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-header{
+header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Pousse le logo à gauche et le nav à droite */
+    align-items: center;            /* Aligne verticalement au milieu */
+    padding: 20px 40px;             /* Marge interne pour ne pas coller aux bords */
 }
 nav {
-  margin-left: auto;
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 15px;            /* Espace entre chaque bouton */
 }
-a{
-   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+nav a {
+    background-color: #007bff; /* Le bleu vif des boutons */
+    color: white;              /* Texte en blanc */
+    text-decoration: none;     /* Enlève le soulignement */
+    padding: 12px 20px;        /* Taille interne du bouton */
+    border-radius: 8px;        /* Coins arrondis */
+    font-weight: bold;         /* Texte en gras */
+    text-transform: uppercase; /* Force les majuscules */
+    font-size: 14px;
+    transition: background0.3s ease; /* Animation fluide au survol */
 }
 .a:hover {
   background-color: #0056b3;
