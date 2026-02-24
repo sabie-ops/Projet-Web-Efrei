@@ -128,3 +128,130 @@ footer{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-small;
 }
+/* --- Styles pour les nouvelles sections ajoutées --- */
+
+/* 1. Section Chiffres Clés */
+.chiffres-cles {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.chiffres-cles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 3rem;
+    color: #007bff; /* Bleu assorti à tes boutons */
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* 2. Section Actualités et Événements */
+.actus-events {
+    padding: 60px 40px;
+    background-color: rgba(3, 6, 26, 0.5); /* Rappel du bleu roi du body */
+    color: white;
+}
+
+.actus-events h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.event-item {
+    background: #fff;
+    color: #03061a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.event-item h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.event-item a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+.event-item a:hover {
+    color: #003d80;
+    border-bottom-color: #003d80;
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-fast {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.btn-fast:hover {
+    background-color: white;
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Ajustement espacement Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
