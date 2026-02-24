@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, hsl(214, 27%, 65%), #03061a); /* Dégradé bleu clair vers bleu roi */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Pousse le logo à gauche et le nav à droite */
+    align-items: center;            /* Aligne verticalement au milieu */
+    padding: 20px 40px;             /* Marge interne pour ne pas coller aux bords */
+}
+nav {
+    display: flex;
+    gap: 15px;            /* Espace entre chaque bouton */
+}
+nav a {
+    background-color: #007bff; /* Le bleu vif des boutons */
+    color: white;              
+    text-decoration: none;     
+    padding: 12px 20px;        
+    border-radius: 8px;        
+    font-weight: bold;         
+    text-transform: uppercase; 
+    font-size: 14px;
+    transition: background0.3s ease; 
+}
+:root {
+    --primary-color: #0056b3; /* Bleu EFREI */
+    --secondary-color: #00d4ff;
+    --text-dark: #2d3436;
+    --bg-light: #f8f9fa;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.pro-section {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* Grille Responsive */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Style des Cartes */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--secondary-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card.highlight {
+    background: linear-gradient(145deg, #ffffff, #eef6ff);
+    border-top-color: var(--primary-color);
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Listes et badges */
+ul {
+    padding-left: 20px;
+}
+
+.tag-list, .job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tag-list li {
+    display: inline-block;
+    background: #e1e8ef;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.stat {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #27ae60;
+}
+
+.stat span {
+    font-size: 0.9rem;
+    display: block;
+    color: #636e72;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #003d82;
+}
