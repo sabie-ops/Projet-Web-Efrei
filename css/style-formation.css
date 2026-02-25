@@ -48,73 +48,41 @@ nav a {
 .a:hover {
   background-color: #0056b3;
 }
-.banner {
-  display: flex;
-  overflow-x: auto;          /* Enables horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Smooth snap */
-  scroll-behavior: smooth;
-  gap: 10px;
-}
-
-.banner img {
-  flex: 0 0 100%;            /* Each image takes full width */
-  height: 400px;
-  object-fit: cover;
-  scroll-snap-align: start;
-  border-radius: 10px;
-}
-
-/* Optional: hide scrollbar */
-/* .banner::-webkit-scrollbar {
-  display: none;
-} */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-.formations {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px;
-    padding: 40px;
-}
-
-.form-1 {
-    background: white;
+.formation-card {
+    background-color: #f4f6f9;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.banner {
-    display: flex;
-    overflow-x: auto;
-    gap: 8px;
-    height: 150px; /* Reduce this */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.banner img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    border-radius: 6px;
+.formation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
-.form-1 {
-    max-width: 300px;  /* smaller width for each card */
-    padding: 15px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+.formation-card h3 {
+    color: #0f2a47;
+}
+
+.formation-card ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.formation-intro {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
 }
 footer{
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-small;
+}
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
