@@ -7,17 +7,7 @@
     <link rel="stylesheet" href="../css/style-accueil.css"> 
 </head>
 <body>
-   <header>
-    <img src="../image/efre8logo.png" alt="logo efrei" class="logo">
-        <nav>
-         <a href="./accueil.html">ACCUEIL</a>
-            <a href="./formation.html">FORMATION</a>
-            <a href="./asso.html">VIE ASSOCIATIVE</a>
-            <a href="./enseignante.html">EQUIPE ENSEIGNANTE</a>
-            <a href="./contact.html">CONTACT</a>
-             <a href="./carrière.html">CARRIERE</a>
-        </nav>
-   </header>
+  <?php include("headers.php"); ?>
   <section>
     <h1> l'excellence technologie au coeur de l 'efrei </h1>
     <p>"Le département Informatique forme les experts de demain capables de répondre aux défis de la transformation digitale. De la Cybersécurité à l'Intelligence Artificielle, en passant par le Développement Logiciel, nous offrons une pédagogie axée sur l'innovation et la pratique. Rejoignez un environnement dynamique où la passion du code rencontre l'ambition professionnelle."</p>
@@ -75,12 +65,7 @@
       </div>
   </section>
 
- 
-   
+  <?php include("footer.php"); ?>
   
-
-<footer>
-        <p>Created by <br> SABIE NITEKA & <br>KENDYS KEPTUE</p>
-    </footer>
 </body>
 </html>

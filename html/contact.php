@@ -8,17 +8,7 @@
 </head>
 <body>
 
-    <header>
-        <img src="../image/efre8logo.png" alt="logo efrei" class="logo">
-       <nav>
-            <a href="./accueil.html" class="a">ACCUEIL</a>
-            <a href="./formation.html" class="a">FORMATION</a>
-            <a href="./asso.html" class="a">VIE ASSOCIATIVE</a>
-            <a href="./enseignante.html" class="a">EQUIPE ENSEIGNANTE</a>
-            <a href="./contact.html" class="a">CONTACT</a>
-            <a href="./carrière.html" class="a">CARRIERE</a>
-        </nav>
-    </header>
+    <?php include("headers.php"); ?>
     <section class="main-content">
 
         <section class="contact">
@@ -142,8 +132,8 @@
 
         </div>
     </section>
-    <footer>
-        <p>Created by <br>SABIE NITEKA & <br>KENDYS KEPTUE</p>
-    </footer>
+    
+    <?php include("footer.php"); ?>
+
 </body>
 </html>
