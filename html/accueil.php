@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>deparement informatique </title>
     <link rel="stylesheet" href="../css/style-accueil.css"> 
+        <script src="../js/scriptaccueil.js"></script>
 </head>
 <body>
   <?php include("headers.php"); ?>
@@ -66,6 +67,7 @@
   </section>
 
   <?php include("footer.php"); ?>
+
   
 </body>
 </html>
