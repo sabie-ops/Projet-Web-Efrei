@@ -48,7 +48,7 @@
         <section class="apropos">
             <h2>FORMULAIRE</h2>
             <div class="contact-section ">
-                <form action="" class="contact-form" >
+                <form action="" class="contact-form" id="contactForm" >
                     <h3>FAQ</h3>
                     <label for="">nom:</label>
                     <input type="text" required><br>
@@ -60,7 +60,6 @@
                     <textarea placeholder="Entrez votre message" rows="5" required></textarea>
                     <button>envoyer</button>
                 </form>
-                
             </div>
         </section>
         
@@ -158,5 +157,6 @@
     
     <?php include("footer.php"); ?>
 
+    <script src="../js/script.js"></script>
 </body>
 </html>
