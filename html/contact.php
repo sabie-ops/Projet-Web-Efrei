@@ -46,20 +46,18 @@
             </div>
         </section>
         <section class="apropos">
-            <p class="txt">Campus principal :  <br>Villejuif (94), France</p>
-            <p class="txt">Adresse :  <br>30-32 Avenue de la République <br> 94800 Villejuif</p>
-            <p class="txt">Téléphone :  <br>+33 (0)1 46 77 47 47</p>
-            <p class="txt">Email général admissions :  <br>admissions@efrei.fr</p>
-                <!-- <img src="../image/logo-1.png" alt="logo pathaleon efrei" class="logo-1"> -->
+            <h2>FORMULAIRE</h2>
             <div class="contact-section ">
                 <form action="" class="contact-form" >
                     <h3>FAQ</h3>
-                    <label for="">nom et prenom:</label>
+                    <label for="">nom:</label>
+                    <input type="text" required><br>
+                    <label for="">prenom:</label>
                     <input type="text" required><br>
                     <label for="">Email:</label>
                     <input type="email" placeholder="example@gmail.com" required><br>
                     <label for="">Question</label>
-                    <input type="text" placeholder="entre message" required>
+                    <textarea placeholder="Entrez votre message" rows="5" required></textarea>
                     <button>envoyer</button>
                 </form>
                 
@@ -131,6 +129,31 @@
             </div>
 
         </div>
+    </section>
+
+
+    <section class="Contact-info">
+
+        <div class="Info-card">
+            <h4>Campus principal</h4>
+            <p>Villejuif (94), France</p>
+        </div>
+
+        <div class="Info-card">
+            <h4>Adresse</h4>
+            <p>30-32 Avenue de la République<br>94800 Villejuif</p>
+        </div>
+
+        <div class="Info-card">
+            <h4>Téléphone</h4>
+            <p>+33 (0)1 46 77 47 47</p>
+        </div>
+
+        <div class="Info-card">
+            <h4>Email admissions</h4>
+            <p>admissions@efrei.fr</p>
+        </div>
+
     </section>
     
     <?php include("footer.php"); ?>

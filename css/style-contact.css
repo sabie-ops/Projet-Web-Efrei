@@ -139,6 +139,10 @@ footer {
     border-radius: 6px;
     font-size: 14px;
 }
+.contact-form textarea{
+    resize: vertical; /* user can expand vertically */
+    min-height: 120px;
+}
 
 /* Attribute selector example */
 .contact-form input[type="email"] {
@@ -285,4 +289,42 @@ footer {
     .map-container iframe {
         height: 300px;
     }
+}
+
+
+
+/* ======== Coordonnées du département ======= */
+
+.Contact-info{
+display:flex;
+justify-content:center;
+gap:25px;
+padding:50px;
+background-color:#f4f6f9;
+flex-wrap:wrap;
+}
+
+.Info-card{
+background:white;
+padding:25px;
+width:220px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.Info-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+.Info-card h4{
+color:#0f2a47;
+margin-bottom:10px;
+}
+
+.Info-card p{
+font-size:14px;
+color:#333;
 }
