@@ -93,6 +93,12 @@ body {
 .contact-info a:hover {
   text-decoration: underline;
 }
+nav a.active {
+    background-color: #ff9800; /* highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 
 /* --- Nouvelles sections : Expertise et Recherche --- */
 

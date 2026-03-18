@@ -49,6 +49,12 @@ nav a {
 nav a:hover {
     background-color: #0056b3; /* Bleu plus foncé quand on passe la souris */
 }
+nav a.active {
+    background-color: #ff9800; /* highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 .image {
     width: 1000px;        
     height: 500px;

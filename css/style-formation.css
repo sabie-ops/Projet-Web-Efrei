@@ -48,6 +48,12 @@ nav a {
 .a:hover {
   background-color: #0056b3;
 }
+nav a.active {
+    background-color: #ff9800; /* highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 .formation-card {
     background-color: #f4f6f9;
     border-radius: 12px;

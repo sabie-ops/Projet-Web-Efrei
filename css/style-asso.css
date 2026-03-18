@@ -36,6 +36,12 @@ nav a {
 .a:hover {
   background-color: #0056b3;
 }
+nav a.active {
+    background-color: #ff9800; /* highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 .intro{
     display: flex;
     flex-direction: row;
@@ -402,4 +408,59 @@ div a{
         width: 100%;
         margin-bottom: 20px;
     }
+}
+/* =====BANNER======= */
+.banner{
+    width:90%;
+    height:250px;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    background-color:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    border-radius:20px;
+    position:absolute;
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.banner img.active{
+    opacity:1;
+}
+
+/* Buttons styling */
+.banner .prev,
+.banner .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    font-size:24px;
+    padding:10px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.banner .prev{
+    left:10px;
+}
+
+.banner .next{
+    right:10px;
+}
+
+.banner .prev:hover,
+.banner .next:hover{
+    background:rgba(0,0,0,0.7);
 }

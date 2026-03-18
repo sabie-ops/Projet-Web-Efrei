@@ -1,6 +1,21 @@
-document.getElementById("contactForm").addEventListener("submit", function(e)
-{
-    e.preventDefault();
-    alert("Votre message a été envoyé avec succès !");
-    this.reset();
+
+const form = document.getElementById("contactForm");
+const messageBox = document.getElementById("confirmationMessage");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault(); // Prevent actual submission
+
+    // Get the email input value
+    const email = form.email.value;
+
+    // Display dynamic confirmation message
+    messageBox.textContent = `Votre message a été envoyé. Nous vous enverrons une réponse à ${email}.`;
+
+    // Clear the form fields
+    console.log("Before reset");
+    form.reset();
+    console.log("After reset");
+    setTimeout(() => { messageBox.textContent = ""; }, 8000);
+
 });
+

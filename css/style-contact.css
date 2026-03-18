@@ -36,6 +36,12 @@ nav a {
 .a:hover {
   background-color: #0056b3;
 }
+nav a.active {
+    background-color: #ff9800; /* highlight color */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
 .email{
   color: white;
   text-decoration: none;

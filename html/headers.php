@@ -1,13 +1,23 @@
 <?php
-    echo"<header>
+$current_page = basename($_SERVER['PHP_SELF']); // get current page filename
+echo "<header>
     <img src='../image/efre8logo.png' alt='logo efrei' class='logo'>
-        <nav>
-            <a href='./accueil.php'>ACCUEIL</a>
-            <a href='./formation.php'>FORMATION</a>
-            <a href='./asso.php'>VIE ASSOCIATIVE</a>
-            <a href='./enseignante.php'>EQUIPE ENSEIGNANTE</a>
-            <a href='./contact.php'>CONTACT</a>
-            <a href='./carrière.php'>CARRIERE</a>
-        </nav>
-   </header>";
+    <nav>";
+    
+    $menu = [
+        'accueil.php' => 'ACCUEIL',
+        'formation.php' => 'FORMATION',
+        'asso.php' => 'VIE ASSOCIATIVE',
+        'enseignante.php' => 'EQUIPE ENSEIGNANTE',
+        'contact.php' => 'CONTACT',
+        'carrière.php' => 'CARRIERE'
+    ];
+    
+    foreach($menu as $file => $title){
+        $active = ($current_page == $file) ? 'active' : '';
+        echo "<a href='./$file' class='$active'>$title</a>";
+    }
+    
+echo "</nav>
+</header>";
 ?>

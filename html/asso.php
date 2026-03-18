@@ -8,6 +8,18 @@
 </head>
 <body>
     <?php include("headers.php"); ?>
+
+    <section class="banner">
+        <img src="../image/banner1.jpg" class="slide active">
+        <img src="../image/banner2.jpg" class="slide">
+        <img src="../image/asso-cyber.png" class="slide">
+        <img src="../image/banner4.jpg" class="slide">
+        <img src="../image/banner5.jpg" class="slide">
+        <img src="../image/banner6.jpg" class="slide">
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
     <div class="intro">
     <p> <i>À l’Efrei, la vie étudiante rime avec engagement, créativité et <br>
         réussite. Au sein de campus dynamiques, les étudiants profitent <br>
@@ -210,6 +222,7 @@
     </section>
 
     <?php include("footer.php"); ?>
+    <script src="../js/scriptasso.js"></script>
     
 </body>
 </html>

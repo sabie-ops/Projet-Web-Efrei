@@ -51,16 +51,19 @@
                 <form action="" class="contact-form" id="contactForm" >
                     <h3>FAQ</h3>
                     <label for="">nom:</label>
-                    <input type="text" required><br>
+                    <input type="text" name="nom" required><br>
                     <label for="">prenom:</label>
-                    <input type="text" required><br>
+                    <input type="text" name="prenom" required><br>
                     <label for="">Email:</label>
-                    <input type="email" placeholder="example@gmail.com" required><br>
+                    <input type="email" placeholder="example@gmail.com" name="email" required><br>
                     <label for="">Question</label>
-                    <textarea placeholder="Entrez votre message" rows="5" required></textarea>
+                    <textarea placeholder="Entrez votre message" rows="5" name="question" required></textarea>
                     <button>envoyer</button>
                 </form>
             </div>
+
+            <!-- Confirmation message -->
+            <div id="confirmationMessage" style="margin-top:15px; color:green; font-weight:bold;"></div>
         </section>
         
     </section>
