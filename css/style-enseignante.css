@@ -99,6 +99,12 @@ nav a.active {
     font-weight: bold;
     border-radius: 8px;
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above other elements */
+    background-color: hsl(214, 27%, 65%); /* important so content doesn't show through */
+}
 
 /* --- Nouvelles sections : Expertise et Recherche --- */
 

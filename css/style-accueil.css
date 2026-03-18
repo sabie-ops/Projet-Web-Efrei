@@ -14,6 +14,12 @@ header {
     align-items: center;            /* Aligne verticalement au milieu */
     padding: 20px 40px;             /* Marge interne pour ne pas coller aux bords */
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above other elements */
+    background-color: hsl(214, 27%, 65%); /* important so content doesn't show through */
+}
 
 /* 3. Le Logo : on le force en cercle */
 .logo {
