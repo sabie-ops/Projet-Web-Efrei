@@ -57,7 +57,7 @@
                     <label for="">Email:</label>
                     <input type="email" placeholder="example@gmail.com" name="email" required><br>
                     <label for="">Question</label>
-                    <textarea placeholder="Entrez votre message" rows="5" name="question" required></textarea>
+                    <textarea placeholder="Entrez votre message" rows="5" name="question" class="question" required></textarea>
                     <button>envoyer</button>
                 </form>
             </div>

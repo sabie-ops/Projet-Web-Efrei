@@ -12,9 +12,9 @@ form.addEventListener("submit", function(e){
     messageBox.textContent = `Votre message a été envoyé. Nous vous enverrons une réponse à ${email}.`;
 
     // Clear the form fields
-    console.log("Before reset");
+
     form.reset();
-    console.log("After reset");
+    
     setTimeout(() => { messageBox.textContent = ""; }, 8000);
 
 });
